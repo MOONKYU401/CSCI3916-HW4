@@ -15,8 +15,7 @@ The Movie Review API is designed to manage and interact with movie and review da
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/movie-review-api.git
-cd movie-review-api
+git clone [https://github.com/your-username/movie-review-api.git](https://github.com/MOONKYU401/CSCI3916-HW4.git)
 ```
 
 ### 2. Install Dependencies
@@ -30,9 +29,8 @@ npm install
 Create a `.env` file in the root directory and add the following:
 
 ```env
-PORT=8080
-MONGODB_URI=mongodb://localhost:27017/movies
-JWT_SECRET=your_jwt_secret_key
+DB=mongodb+srv://dbuser:db_password@csci3916.3qxic.mongodb.net/
+SECRET_KEY=myuniquekey
 ```
 
 > Replace `your_jwt_secret_key` and `MONGODB_URI` with your actual configuration values.
