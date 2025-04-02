@@ -29,7 +29,7 @@ npm install
 Create a `.env` file in the root directory and add the following:
 
 ```env
-DB=mongodb+srv://dbuser:db_password@csci3916.3qxic.mongodb.net/
+DB=URL
 SECRET_KEY=myuniquekey
 ```
 
