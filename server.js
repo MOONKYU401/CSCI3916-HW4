@@ -68,8 +68,6 @@ router.post('/signin', function (req, res) {
     })
 });
 
-router.route('/movies')
-  
 
 router.route('/movies/:movieId')
   .get(authJwtController.isAuthenticated, async (req, res) => {
@@ -158,7 +156,7 @@ router.route('/movies')
       try {
           const movie = new Movie({ title, genre, actors, releaseDate });
           const savedMovie = await movie.save();
-          res.status(201).json({ movie: savedMovie });
+          res.status(200).json({ movie: savedMovie });
       } catch (err) {
           res.status(500).json({ message: err.message });
       }
@@ -198,7 +196,7 @@ router.route('/movies')
   const Review = require('./Reviews');
 
   // Reviews routes
-  router.route('/Reviews')
+  router.route('/reviews')
     // GET all reviews
     .get(authJwtController.isAuthenticated, async (req, res) => {
         try {
@@ -213,14 +211,14 @@ router.route('/movies')
     .post(authJwtController.isAuthenticated, async (req, res) => {
         const { movieId, username, review, rating } = req.body;
   
-        if (!movieId || !username || !review || rating === undefined) {
-            return res.status(400).json({ message: 'movieId, username, review, and rating are required.' });
+        if (!movieId || !review || rating === undefined) {
+            return res.status(400).json({ message: 'movieId, review, and rating are required.' });
         }
   
         try {
             const newReview = new Review({ movieId, username, review, rating });
             await newReview.save();
-            res.status(201).json({ message: 'Review created!' });
+            res.status(200).json({ message: 'Review created!' });
         } catch (err) {
             res.status(500).json({ message: err.message });
         }
