@@ -1,16 +1,16 @@
-# 🎬 Movie Review API
+# Movie Review API
 
 A secure and testable backend API built with Node.js, Express, and MongoDB that allows users to browse movies, submit reviews, and fetch movie details with optional embedded review data. The API includes JWT-based authentication, robust validation, and automated testing support.
 
 ---
 
-## 📖 Project Explanation
+## roject Explanation
 
 The Movie Review API is designed to manage and interact with movie and review data through RESTful endpoints. Authenticated users can submit reviews for movies and retrieve movie details using the optional `?reviews=true` query parameter. It demonstrates secure backend design with token-based authentication, MongoDB relationships, error handling, and integration testing.
 
 ---
 
-## 🛠 Installation and Usage Instructions
+## Installation and Usage Instructions
 
 ### 1. Clone the Repository
 
@@ -44,16 +44,15 @@ npm start
 ```
 
 The server will be running at:  
-📍 **http://localhost:8080**
+**http://localhost:8080**
 
 You can now use Postman or any API client to interact with the endpoints.
 
 ---
 
-## 🧪 Postman Test Collection
+## Postman Test Collection
 
-📬 **[Click here to access the Postman collection](https://www.postman.com/your-workspace/collections/your-collection-id)**  
-*(Replace the above link with your actual shared collection URL)*
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/41591091-1b2b23e0-30e6-4e72-bb1d-c5095c95f89a?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D41591091-1b2b23e0-30e6-4e72-bb1d-c5095c95f89a%26entityType%3Dcollection%26workspaceId%3D20d203b2-5fa1-4169-876c-f1d6740e5574#?env%5BMoon_HW4%5D=W3sia2V5IjoiSldUIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCIsInNlc3Npb25WYWx1ZSI6IkpXVC4uLiIsImNvbXBsZXRlU2Vzc2lvblZhbHVlIjoiSldUIGV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNklqWTNaV1E0WkdJeE5UaGlNR1V6TURBMU1qUTBNakk1TXlJc0luVnpaWEp1WVcxbElqb2lZbUYwYldGdU1pSXNJbWxoZENJNk1UYzBNell6TkRVNU0zMC5WY3JSZXNNTEY3ZnMwSFA0RGZ3NHN5SFkyWXdZV3JoYklpbkdHYTZjQmRrIiwic2Vzc2lvbkluZGV4IjowfV0=)
 
 This collection includes:
 - JWT login & authentication
@@ -63,20 +62,7 @@ This collection includes:
 
 ---
 
-## 🌍 Postman Environment Settings
-
-Create a Postman environment with the following variables:
-
-| Variable   | Example Value           |
-|------------|-------------------------|
-| `base_url` | `http://localhost:8080` |
-| `token`    | (Set after login)       |
-
-Use `{{base_url}}` and `{{token}}` in your collection for dynamic request handling.
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 movie-review-api/
@@ -94,15 +80,3 @@ movie-review-api/
 ```
 
 ---
-
-## 👤 Author
-
-**Kyungju Moon**  
-Backend Development Assignment – 2025  
-Instructor: *[Your Instructor's Name]*
-
----
-
-## 📄 License
-
-This project is for educational use only.
