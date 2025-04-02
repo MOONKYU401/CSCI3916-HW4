@@ -4,7 +4,7 @@ A secure and testable backend API built with Node.js, Express, and MongoDB that 
 
 ---
 
-## roject Explanation
+## Project Explanation
 
 The Movie Review API is designed to manage and interact with movie and review data through RESTful endpoints. Authenticated users can submit reviews for movies and retrieve movie details using the optional `?reviews=true` query parameter. It demonstrates secure backend design with token-based authentication, MongoDB relationships, error handling, and integration testing.
 
